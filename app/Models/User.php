@@ -6,6 +6,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Order;
+use App\Models\CartItem;
+use App\Models\Issue;
+use App\Models\Voucher;
 
 class User extends Authenticatable
 {
@@ -43,5 +47,21 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function order(){
+        return $this->hasMany(Order::class);
+    }
+
+    public function cartItem(){
+        return $this->hasMany(CartItem::class);
+    }
+
+    public function issue(){
+        return $this->hasMany(Issue::class);
+    }
+
+    public function voucher(){
+        return $this->hasMany(Voucher::class);
     }
 }
