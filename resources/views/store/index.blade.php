@@ -3,7 +3,7 @@
 
 @section('content')
 
-        <div class="container py-5">
+        <div class="container feature py-5">
             <div class="row">
                 <div class="col-8">
                     
@@ -28,7 +28,7 @@
                             <td>{{$data->store_email}}</td>
                             
                             <td><a href="{{ route('store.show',$data->id)}}" class="btn btn-primary btn-sm">View</a></td>
-                            <td><a href="{{ route('store.show',$data->id)}}" class="btn btn-warning btn-sm">Edit</a></td>
+                            <td><a href="{{ route('store.edit',$data->id)}}" class="btn btn-warning btn-sm">Update</a></td>
                             <td><a href="{{ route('store.destroy',$data->id)}}" class="btn btn-danger btn-sm">Delete</a></td>
                         </tr>
                     @endforeach

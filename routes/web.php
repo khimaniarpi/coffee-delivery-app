@@ -24,6 +24,8 @@ Route::get('/stores/{id}',[StoreController::class, 'show'])->name('store.show')-
 Route::get('/delete/{id}',[StoreController::class, 'destroy'])->name('store.destroy');
 Route::get('/create',[StoreController::class, 'create'])->name('store.create');
 Route::post('/addstore',[StoreController::class, 'store'])->name('store.add');
+Route::post('/update/{id}',[StoreController::class, 'update'])->name('store.update');//form page update btn updateuser
+Route::get('/updatestore/{id}',[StoreController::class, 'edit'])->name('store.edit');//index page update btn updatepage
 
 Route::get('/cart',[CartItemController::class, 'index']);
 
