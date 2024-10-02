@@ -10,8 +10,8 @@ class Category extends Model
 {
     use HasFactory;
 
-    public function menu(){
+    // public function menu(){
 
-        return $this->hasMany(Menu::class); 
-    }
+    //     return $this->hasMany(Menu::class); 
+    // }
 }

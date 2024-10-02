@@ -80,7 +80,6 @@
     background: var(--bs-white);
     border: 0;
 }
-
 .topbar {
     padding: 20px;
     border-radius: 230px 100px;
@@ -178,7 +177,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/hero-img.jpg);
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/coffee123.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,7 +218,7 @@
 
 .page-header {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cart-page-header-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/page-background-header.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -482,7 +481,7 @@
 /*** Footer Start ***/
 .footer .footer-item .btn-link {
     line-height: 35px;
-    color: rgba(255, 255, 255, .5);
+    color: #a56349;
     transition: 0.5s;
 }
 

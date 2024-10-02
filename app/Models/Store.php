@@ -10,6 +10,8 @@ class Store extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['store_name', 'store_address', 'store_phone', 'store_email'];
+
     public function menu(){
 
         return $this->hasMany(Menu::class);

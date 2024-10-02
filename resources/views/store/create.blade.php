@@ -5,7 +5,6 @@
     <div class="container feature py-5">
         <div class="row">
             <div class="col-12">
-                <h1>Add new store</h1>
                 <div class="col-md-7 col-lg-8">
                         
                         <form class="needs-validation" novalidate="" action="{{route('store.add')}}" method="POST">
@@ -15,7 +14,7 @@
                             <label for="storename" class="form-label">Store name</label>
                             <input type="text" class="form-control" name="storename"  placeholder="" value="" required="">
                             <div class="invalid-feedback">
-                                Valid store name is required.
+                                Valid store name is required.   
                             </div>
                             </div>
 
@@ -45,8 +44,8 @@
                         </div>
 
                         <hr class="my-4">
-
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Add Store</button>
+                        
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
                         </form>
                     </div>
 

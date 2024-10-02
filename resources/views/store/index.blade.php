@@ -1,12 +1,15 @@
 
 @extends('master')
 
+
 @section('content')
 
         <div class="container feature py-5">
             <div class="row">
                 <div class="col-8">
-                    
+                
+                    <a href="{{ route('store.create')}}" class="btn btn-success btn-sm mb-3">Add New</a>
+                
                     <table class="table table-bordered table-striped">
                       <tr>
                         <th>ID</th>
@@ -19,7 +22,7 @@
                         <th>Delete</th>
 
                       </tr>    
-                    @foreach($list as $store => $data)
+                        @foreach($list as $store => $data)
                         <tr>
                             <td>{{$data->id}}</td>
                             <td>{{$data->store_name}}</td>
@@ -31,9 +34,9 @@
                             <td><a href="{{ route('store.edit',$data->id)}}" class="btn btn-warning btn-sm">Update</a></td>
                             <td><a href="{{ route('store.destroy',$data->id)}}" class="btn btn-danger btn-sm">Delete</a></td>
                         </tr>
-                    @endforeach
+                        @endforeach
                     </table>
-                    <a href="{{ route('store.create')}}" class="btn btn-success btn-sm mb-3">Add New</a>
+                    
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@
                         
                         <form class="needs-validation" novalidate="" action="{{route('store.update', $data->id )}}" method="POST">
                           @csrf  
+                          @method('PUT')
                         <div class="row g-3">
                             <div class="col-12">
                             <label for="storename" class="form-label">Store name</label>
